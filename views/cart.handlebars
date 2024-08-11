@@ -1,0 +1,14 @@
+<h1>Mi Carrito</h1>
+{{#each cart.products}}
+  <div>
+    <h2>{{this.name}}</h2>
+    <p>{{this.quantity}}</p>
+    <button onclick="removeFromCart('{{../_id}}', '{{this._id}}')">Eliminar</button>
+  </div>
+{{/each}}
+
+<script>
+  function removeFromCart(cartId, productId) {
+    // Lógica para eliminar del carrito
+  }
+</script>
